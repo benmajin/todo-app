@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <section>
+      <div class="todo-wrapper">
+        <div class="brand-container">
+          <div class="logo">todo</div>
+          <div class="toggle-theme">
+            <img
+              class="sun-icon"
+              src="images/icon-sun.svg"
+              alt="switcher sun dark mode"
+            />
+            <img class="moon-icon" src="images/icon-moon.svg" alt="moon icon" />
+          </div>
+        </div>
+        <div class="todo-input">
+          <input
+            class="input dark-mode"
+            type="text"
+            placeholder="Create a new todo..."
+          />
+          <div class="input-span"></div>
+        </div>
+        <div class="todos-container"></div>
+
+        <div class="clear dark-mode">
+          <div class="items-left">0 items left</div>
+          <div class="clear-completed">Clear Completed</div>
+        </div>
+
+        <div class="selector dark-mode">
+          <input
+            type="radio"
+            id="all"
+            name="filter"
+            class="filter-input"
+            checked
+          />
+          <label for="all">All</label>
+
+          <input type="radio" id="active" name="filter" class="filter-input" />
+          <label for="active">Active</label>
+
+          <input
+            type="radio"
+            id="completed"
+            name="filter"
+            class="filter-input"
+          />
+          <label for="completed">Completed</label>
+        </div>
+      </div>
+    </section>
+    <div class="dark-mode bg-main"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
